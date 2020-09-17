@@ -14,18 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText edtCari;
     private Button btnCari;
     private TextView txtpencarian;
-
-        String Palindrome[]={
-                "A nut for a jar of tuna. ?",
-                "Al lets Della call Ed “Stella.”",
-                "Amore, Roma.",
-                "Borrow or rob?",
-                "King, are you glad you are king?",
-                "Taco cat",
-                "Was it a car or a cat I saw? ",
-                "Oozy rat in a sanitary zoo.",
-        };
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,9 +33,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void cariPalindrome() {
-//        if (edtCari.getText().toString().isEmpty()) {
-//
-//        }
         String cari = edtCari.getText().toString();
         if (cari.equals("A nut for a jar of tuna. ?") ){
             txtpencarian.setText("PALINDROME");
